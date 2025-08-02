@@ -980,29 +980,11 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-5 {
-    top: calc(var(--spacing) * 5);
-  }
   .top-10 {
     top: calc(var(--spacing) * 10);
   }
-  .top-20 {
-    top: calc(var(--spacing) * 20);
-  }
-  .top-56 {
-    top: calc(var(--spacing) * 56);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .-bottom-0 {
-    bottom: calc(var(--spacing) * -0);
-  }
-  .-bottom-2 {
-    bottom: calc(var(--spacing) * -2);
-  }
-  .-bottom-20 {
-    bottom: calc(var(--spacing) * -20);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -1016,8 +998,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .-z-0 {
+    z-index: calc(0 * -1);
+  }
   .z-0 {
     z-index: 0;
+  }
+  .z-3 {
+    z-index: 3;
   }
   .z-10 {
     z-index: 10;
@@ -1575,9 +1563,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1589,9 +1574,6 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-11 {
-    width: calc(var(--spacing) * 11);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -1685,9 +1667,6 @@
   .flex-shrink {
     flex-shrink: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1717,17 +1696,8 @@
   .transform-none {
     transform: none;
   }
-  .animate-\[updown_2s_ease-in-out_infinite\] {
-    animation: updown 2s ease-in-out infinite;
-  }
   .animate-\[updown_10s_cubic-bezier\(0\.11\,0\,0\.5\,0\)_0ms_infinite_reverse_none\] {
     animation: updown 10s cubic-bezier(0.11,0,0.5,0) 0ms infinite reverse none;
-  }
-  .animate-\[updown_10s_ease-in-out_infinite\] {
-    animation: updown 10s ease-in-out infinite;
-  }
-  .animate-\[updown_10ss_ease-in-out_infinite\] {
-    animation: updown 10ss ease-in-out infinite;
   }
   .cursor-default {
     cursor: default;
@@ -2081,9 +2051,6 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -2104,9 +2071,6 @@
   }
   .bg-primary-light {
     background-color: var(--color-primary-light);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -2182,18 +2146,6 @@
     }
     .dark .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text& {
       fill: white !important;
-    }
-  }
-  .apexcharts-gridline {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
     }
   }
   .apexcharts-ycrosshairs {
@@ -2492,9 +2444,6 @@
   }
   .line-through {
     text-decoration-line: line-through;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
