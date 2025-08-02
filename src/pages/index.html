@@ -24,8 +24,30 @@
             }
         }
         @keyframes updown {
-            0%, 100% { transform: translateY(-20px); }
-            50% { transform: translateY(0px); }
+            0%, 100% {
+                transform: translateY(0) rotate(0);
+                transform-origin: 50% 50%;
+            }
+
+            15% {
+                transform: translateY(-10px) rotate(-3deg);
+            }
+
+            30% {
+                transform: translateY(8px) rotate(3deg);
+            }
+
+            45% {
+                transform: translateY(-6px) rotate(-2deg);
+            }
+
+            60% {
+                transform: translateY(4px) rotate(1.2deg);
+            }
+
+            75% {
+                transform: translateY(-2px) rotate(-0.5deg);
+            }
         }
     </style>
 </head>
@@ -173,7 +195,7 @@
      <section class="min-h-120px max-h-980px max-w-1920px mx-auto">
         <div class="grid gap-0 md:grid-cols-2 h-full">
             <div class="bg-primary h-full rounded-tr-[300px] grid md:grid-cols-2 items-start">
-               <img src="../assets/images/leaf/2.svg" alt="Leaf" class="animate-[updown_2s_ease-in-out_infinite] inline-block left-0 bottom-100 w-50 z-0" />
+               <img src="../assets/images/leaf/2.svg" alt="Leaf" class="animate-[updown_10s_cubic-bezier(0.11,0,0.5,0)_0ms_infinite_reverse_none] inline-block left-0 bottom-100 w-50 z-0" />
                <div class="h-full">
                     <img src="../assets/images/home/section3-noshad.png" class="drop-shadow-2xl w-full h-full" alt="">
                </div>
@@ -212,10 +234,12 @@
     <!-- Promotion 12 End -->
 
       <!-- Our Product Start -->
-     <section class="py-[90px] bg-light">
-        <div class="flex justify-center">
-            <div class="min-h-120px max-w-1920px absolute w-full flex flex-wrap justify-between">
+     <section class="py-[90px] bg-light relative">
+        <div class="flex justify-center ">
+            <div class="min-h-120px top-0 max-w-1920px absolute w-full flex flex-wrap justify-start">
                 <img src="../assets/images/leaf/3.svg" alt="">
+            </div>
+            <div class="min-h-120px bottom-0 max-w-1920px absolute w-full flex flex-wrap justify-end ">
                 <img src="../assets/images/leaf/4.svg" alt="">
             </div>
         </div>
@@ -226,7 +250,7 @@
                     <p class="text-sm text-gray-600 font-roboto">All our products are available in various stores.</p>
                 </div>
             </div>
-            <div class="grid w-full gap-6 grid-cols-2 md:grid-cols-3">
+            <div class="grid w-full gap-6 grid-cols-1 md:grid-cols-3">
                 <a href="#">
                     <div class="bg-primary-light md:h-[520px] border-5 border-primary rounded-tl-full rounded-tr-full w-full overflow-hidden">
                         <img src="../assets/images/product/1.png" class="w-full h-full object-cover" alt="shop-img">
