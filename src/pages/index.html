@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth !important;
+        }
+
+        .clip-path{
+            clip-path: polygon(42% 0, 100% 0, 100% 100%, 30% 100%);
+            z-index: -100;
+        }
+        @media (min-width: 781px){
+            .max-w-1920px{
+                max-width: 1920px !important;
+            }
+            .max-h-980px{
+                max-height: 980px !important;
+            }
+        }
+        @keyframes updown {
+            0%, 100% { transform: translateY(-20px); }
+            50% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- header -->
+    <nav class="fixed w-full z-20 top-0 start-0 transition duration-300, ease-in-out" id="navbar">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../assets/images/logo/logo.png" class="h-14" alt="Flowbite Logo">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white cursor-pointer font-roboto bg-primary  font-medium rounded-full text-sm px-5 py-2 text-center">
+                    <div class="flex gap-2 align-content-center">
+                        <i class="bi bi-whatsapp text-white"></i>
+                        <div class="text-white">Contact Us</div>
+                    </div>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only font-roboto">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="#" class="block font-roboto fw-bold py-2 px-3 hover:text-primary text-primary" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-roboto  py-2 px-3 hover:text-primary text-gray-600">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-roboto py-2 px-3 hover:text-primary text-gray-600">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-roboto py-2 px-3 hover:text-primary text-gray-600">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <section class=" w-full h-full overflow-hidden">
+        <img src="../assets/images/leaf/1.svg" alt="Leaf" class="absolute top-10 left-0 w-50 z-0 opacity-80" />
+
+        <div class="flex items-center justify-between bg-red-500 h-100">
+          
+            <div class="w-full h-full md:w-1/2 space-y-4">
+                <span class="inline-block text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">Brightening the Face</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800 leading-tight">Brighten your face with Velvra</h1>
+                <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                <button class="mt-4 bg-green-800 text-white px-6 py-2 rounded-full hover:bg-green-900">Read More</button>
+            </div>
+        
+            <div class="relative w-full md:w-1/2 flex justify-end mt-10 md:mt-0">
+                <div class="absolute clip-path inset-0 bg-green-800 clip-path-diagonal z-0 h-full"></div>
+                <img src="../assets/images/home/hero.png" alt="Velvra Product" class="relative z-10 w-72 drop-shadow-lg" />
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Trusted Shop Start -->
+     <section class="py-[90px] bg-light">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="flex justify-center mb-40">
+                <div class="text-center">
+                    <h3 class="text-4xl text-gray-600 font-roboto">Trusted Shop</h3>
+                    <p class="text-sm text-gray-600 font-roboto">If you want to buy our products, you can buy through our trusted store below.</p>
+                </div>
+            </div>
+
+            <div class="grid w-full gap-6 grid-cols-2 md:grid-cols-4 ">
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/tokopedia.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/blibli.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/amazon.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/shopee.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/lazada.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/shopee.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/tokopedia.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light rounded-lg w-full py-3">
+                    <div class="h-[40px] flex justify-center">
+                        <img src="../assets/images/shop/blibli.png" class="w-50  object-contain mx-auto" alt="shop-img">
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+     </section>
+    <!-- Trusted Shop End-->
+
+    <!-- Promotion 1 Start -->
+     <section class="min-h-120px max-h-980px max-w-1920px mx-auto">
+        <div class="grid gap-0 md:grid-cols-2 h-full">
+            <div class="bg-primary h-full rounded-tr-[300px] grid md:grid-cols-2 items-start">
+               <img src="../assets/images/leaf/2.svg" alt="Leaf" class="animate-[updown_2s_ease-in-out_infinite] inline-block left-0 bottom-100 w-50 z-0" />
+               <div class="h-full">
+                    <img src="../assets/images/home/section3-noshad.png" class="drop-shadow-2xl w-full h-full" alt="">
+               </div>
+            </div>
+            <div class="bg-[url('../assets/images/shape/shape-bg-right.png')] bg-contain bg-no-repeat bg-right h-full w-full flex justify-center items-center">
+                <div class="w-11/12 py-40">
+                    <h1 class="text-5xl md:text-8xl font-bold font-roboto text-secondary">Suitable for sensitive skin</h1>
+                    <p class="text-sm font-roboto text-slate-600 mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="" class="px-11 py-4 bg-primary text-white font-roboto fw-bold rounded-full">Read More</a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Promotion 1 End -->
+
+
+    <!-- Promotion 2 Start -->
+     <section class="min-h-120px max-h-980px max-w-1920px mx-auto">
+        <div class="grid gap-0 md:grid-cols-2 h-full">
+            <div class="bg-[url('../assets/images/shape/shape-bg-left.png')] bg-contain bg-no-repeat bg-left h-full w-full flex justify-center items-center">
+                <div class="w-11/12 py-40">
+                    <h1 class="text-5xl md:text-8xl font-bold font-roboto text-secondary">Shrinks pores and cleans black spots</h1>
+                    <p class="text-sm font-roboto text-slate-600 mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="" class="px-11 py-4 bg-primary text-white font-roboto fw-bold rounded-full">Read More</a>
+                </div>
+            </div>
+            <div class="bg-primary rounded-bl-[300px]">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-75 h-[600px]">
+                        <img src="../assets/images/home/section4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Promotion 12 End -->
+
+      <!-- Our Product Start -->
+     <section class="py-[90px] bg-light">
+        <div class="flex justify-center">
+            <div class="min-h-120px max-w-1920px absolute w-full flex flex-wrap justify-between">
+                <img src="../assets/images/leaf/3.svg" alt="">
+                <img src="../assets/images/leaf/4.svg" alt="">
+            </div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="flex justify-center mb-40">
+                <div class="text-center">
+                    <h3 class="text-4xl text-gray-600 font-roboto">Our Product</h3>
+                    <p class="text-sm text-gray-600 font-roboto">All our products are available in various stores.</p>
+                </div>
+            </div>
+            <div class="grid w-full gap-6 grid-cols-2 md:grid-cols-3">
+                <a href="#">
+                    <div class="bg-primary-light md:h-[520px] border-5 border-primary rounded-tl-full rounded-tr-full w-full overflow-hidden">
+                        <img src="../assets/images/product/1.png" class="w-full h-full object-cover" alt="shop-img">
+                    </div>
+                    <div class="bg-primary px-5 py-3">
+                        <h1 class="fw-semibold text-white text-base md:text-lg">Velvra Relined Peres, Cleaner Skin</h1>
+                        <h1 class="fw-semibold text-white text-xl md:text-3xl">Rp211.000</h1>
+                        <small class="text-white line-clamp-2">Lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus culpa quaerat vel cum esse aliquid porro amet distinctio doloremque. Similique saepe vitae, incidunt modi deleniti exercitationem natus amet dignissimos accusamus. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light md:h-[520px] border-5 border-primary rounded-tl-full rounded-tr-full w-full overflow-hidden">
+                        <img src="../assets/images/product/2.png" class="w-full h-full object-cover" alt="shop-img">
+                    </div>
+                    <div class="bg-primary px-5 py-3">
+                        <h1 class="fw-semibold text-white text-base md:text-lg">Velvra Relined Peres, Cleaner Skin</h1>
+                        <div class="flex gap-2 items-end">
+                            <h1 class="fw-semibold text-white text-xl md:text-3xl">Rp211.000</h1>
+                            <small class="fw-semibold text-white text-sm line-through">200.000</small>
+                        </div>
+                        <small class="text-white line-clamp-2">Lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus culpa quaerat vel cum esse aliquid porro amet distinctio doloremque. Similique saepe vitae, incidunt modi deleniti exercitationem natus amet dignissimos accusamus. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bg-primary-light md:h-[520px] border-5 border-primary rounded-tl-full rounded-tr-full w-full overflow-hidden">
+                        <img src="../assets/images/product/1.png" class="w-full h-full object-cover" alt="shop-img">
+                    </div>
+                    <div class="bg-primary px-5 py-3">
+                        <h1 class="fw-semibold text-white text-base md:text-lg">Velvra Relined Peres, Cleaner Skin</h1>
+                        <div class="flex gap-2 items-end">
+                            <h1 class="fw-semibold text-white text-xl md:text-3xl">Rp211.000</h1>
+                            <small class="fw-semibold text-white text-sm line-through">200.000</small>
+                        </div>
+                        <small class="text-white line-clamp-2">Lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus culpa quaerat vel cum esse aliquid porro amet distinctio doloremque. Similique saepe vitae, incidunt modi deleniti exercitationem natus amet dignissimos accusamus. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+     </section>
+    <!-- Our Product End-->
+
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
