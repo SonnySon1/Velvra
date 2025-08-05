@@ -111,6 +111,9 @@
     --color-pink-700: #BE185D;
     --color-pink-800: #9D174D;
     --color-pink-900: #831843;
+    --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-gray-50: #F9FAFB;
     --color-gray-100: #F3F4F6;
@@ -998,9 +1001,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .-z-0 {
-    z-index: calc(0 * -1);
-  }
   .z-0 {
     z-index: 0;
   }
@@ -1363,6 +1363,12 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
@@ -1563,6 +1569,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1574,6 +1583,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -1667,6 +1679,9 @@
   .flex-shrink {
     flex-shrink: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1755,6 +1770,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -2042,6 +2060,12 @@
       background-color: var(--color-gray-700);
     }
   }
+  .bg-\[\#E3E3E3\] {
+    background-color: #E3E3E3;
+  }
+  .bg-\[E3E3E3\] {
+    background-color: E3E3E3;
+  }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
@@ -2050,6 +2074,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
   }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
@@ -2072,8 +2099,23 @@
   .bg-primary-light {
     background-color: var(--color-primary-light);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
+  }
+  .bg-slate-50 {
+    background-color: var(--color-slate-50);
+  }
+  .bg-slate-100 {
+    background-color: var(--color-slate-100);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200);
   }
   .bg-transparent {
     background-color: transparent;
@@ -2148,6 +2190,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2218,8 +2272,23 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+  .py-28 {
+    padding-block: calc(var(--spacing) * 28);
+  }
+  .py-32 {
+    padding-block: calc(var(--spacing) * 32);
+  }
   .py-40 {
     padding-block: calc(var(--spacing) * 40);
+  }
+  .py-48 {
+    padding-block: calc(var(--spacing) * 48);
   }
   .py-\[90px\] {
     padding-block: 90px;
@@ -2336,13 +2405,33 @@
       color: var(--color-gray-400);
     }
   }
+  .leading-1 {
+    --tw-leading: calc(var(--spacing) * 1);
+    line-height: calc(var(--spacing) * 1);
+  }
+  .leading-2 {
+    --tw-leading: calc(var(--spacing) * 2);
+    line-height: calc(var(--spacing) * 2);
+  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
   .leading-9 {
     --tw-leading: calc(var(--spacing) * 9);
     line-height: calc(var(--spacing) * 9);
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
+  }
+  .leading-64 {
+    --tw-leading: calc(var(--spacing) * 64);
+    line-height: calc(var(--spacing) * 64);
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -2444,6 +2533,9 @@
   }
   .line-through {
     text-decoration-line: line-through;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
@@ -2613,6 +2705,21 @@
       outline-style: none;
     }
   }
+  .sm\:py-1 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 1);
+    }
+  }
+  .sm\:py-5 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:py-14 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 14);
+    }
+  }
   .md\:inset-0 {
     @media (width >= 48rem) {
       inset: calc(var(--spacing) * 0);
@@ -2636,6 +2743,11 @@
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
     }
   }
   .md\:hidden {
@@ -2705,6 +2817,11 @@
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:py-0 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 0);
     }
   }
   .md\:text-3xl {
